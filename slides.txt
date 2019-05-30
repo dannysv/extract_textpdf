@@ -1,0 +1,85 @@
+1)
+	Content Extraction for PDF documents
+2)
+	Tools 
+		- PDFBox
+		- mupdf
+		- pdfminer
+		- pdftotext
+		- poppler(popplerqt4)
+		- pypdf2xml
+		- textract
+		- tika
+One by One
+2.5) 	
+	pdfbox
+3)
+	mupdf
+4)
+	pdfminer
+5) 
+	pdftotext
+6) 
+	poppler(popplerqt4)
+7)
+	textract
+8)
+	tika
+9) 
+	pypdf2xml
+
+Common features
+10)
+	PDFBox e tika(java)
+11)
+	mupdf(C)
+12)
+	pdfminer e textract(python)
+13)
+	pdftotext e poppler(poppler-utils)
+14)
+	pypdf2xml(pdftoxml in python)
+15)
+	
+Results
+16)
+	tika(baseline)
+17)
+	pdfbox
+		- no spaces between pages
+		- similar performance to tika(is part of tika)
+18)
+	mudpf
+		- additional break lines
+		- similar performance to tike
+19)
+	pdfminer
+		- good and wrong results(depending of the input)
+		- examples
+			good(12)- sigue el orden
+			wrong(11.1-2)- extrae caracter por caracter
+		- take the worst time extraction on the experiments
+20)
+	pdftotext
+		- similar performance to mupdf
+21)
+	poppler((popplerqt4)
+		- It is used to reder pdf by pdftotext
+		- So, the results even by using popplerqt4 is similar to the results of pdftotext
+22)
+	textract
+		- It permit us to use pdftotext or pdfminer as method of extraction
+		- The results depends on the method used
+23)
+	
+	Tika
+		- In some cases it does not follow the order of the text in the pdf
+		
+24)
+	pdf2xml
+		- organized
+		- how to interpret and clean the tags?
+
+25)
+	PDFBox, Tika, mupdf
+			
